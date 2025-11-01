@@ -7,5 +7,6 @@
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
-  }
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx", "global.d.ts"]
 }
