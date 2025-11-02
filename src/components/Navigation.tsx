@@ -1,1 +1,0 @@
-import 'logo' from '/src/assets/images/logo-large.svg'
