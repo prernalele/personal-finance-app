@@ -5,7 +5,9 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "module": "NodeNext",
     "incremental": true,
+    "moduleResolution": "NodeNext",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "include": ["src", "**/*.ts", "**/*.tsx", "global.d.ts"]
