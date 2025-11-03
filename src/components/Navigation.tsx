@@ -27,7 +27,7 @@ const Navigation: React.FC<{}> = () => {
       <div className="p-2 m-2 flex flex-col space-y-4">
         {navItems.map((eachItem: NavItem) => {
           return (
-            <div className="text-white hover:bg-white hover:text-darkest-grey hover:p-1  ">
+            <div className="text-white hover:bg-white hover:text-darkest-grey p-1  ">
               {/*eachItem.name.charAt(0).toUpperCase() + eachItem.name.slice(1)*/}
               {eachItem.name}
             </div>
