@@ -1,5 +1,10 @@
 import React from "react";
 import logo from "../assets/images/logo-large.svg";
+import overviewIcon from "../assets/images/icon-nav-overview.svg";
+import transactionsIcon from "../assets/images/icon-nav-transactions.svg";
+import budgetIcon from "../assets/images/icon-nav-budgets.svg";
+import potsIcon from "../assets/images/icon-nav-pots.svg";
+import recurringBillIcon from "../assets/images/icon-nav-recurring-bills.svg";
 
 // interface NavigationProps {
 //   logo: string;
@@ -8,15 +13,19 @@ import logo from "../assets/images/logo-large.svg";
 const Navigation: React.FC<{}> = () => {
   type NavItem = { name: string; img: string };
   const navItems: NavItem[] = [
-    { name: "Overview", img: "" },
+    { name: "Overview", img: overviewIcon },
     {
       name: "Transactions",
-      img: "",
+      img: transactionsIcon,
     },
-    { name: "budgets", img: "" },
+    { name: "Budgets", img: budgetIcon },
     {
-      name: "recurring bills",
-      img: "",
+      name: "Pots",
+      img: potsIcon,
+    },
+    {
+      name: "Recurring bills",
+      img: recurringBillIcon,
     },
   ];
   return (
@@ -29,7 +38,10 @@ const Navigation: React.FC<{}> = () => {
           return (
             <div className="text-white hover:bg-white hover:text-darkest-grey p-1  ">
               {/*eachItem.name.charAt(0).toUpperCase() + eachItem.name.slice(1)*/}
-              {eachItem.name}
+              <div className="flex flex-row items-center ">
+                <img src={eachItem.img} className=" size-4 m-2" />
+                {eachItem.name}
+              </div>
             </div>
           );
         })}
