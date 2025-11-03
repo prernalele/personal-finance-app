@@ -1,7 +1,9 @@
+import Navigation from "./components/Navigation.tsx";
+
 function App() {
   return (
-    <div className="bg-dark-beige  text-5xl font-primary text-light-beige ">
-      Coming soon
+    <div className="bg-amber-950">
+      <Navigation />
     </div>
   );
 }
