@@ -6,8 +6,10 @@ function App() {
   return (
     <div className="bg-amber-950">
       <BrowserRouter>
-        <Navigation />
-        <AppRoutes />
+        <div className="flex flex-row">
+          <Navigation />
+          <AppRoutes />
+        </div>
       </BrowserRouter>
     </div>
   );

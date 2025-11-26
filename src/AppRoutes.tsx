@@ -8,13 +8,14 @@ import RecurringBills from "./components/RecurringBills";
 import NotFound from "./components/NotFound";
 
 function AppRoutes() {
+  const baseURL = "/personal-finance-app";
   return (
     <Routes>
-      <Route path="/" element={<Overview />} />
-      <Route path="/transactions" element={<Transactions />} />
-      <Route path="/budgets" element={<Budgets />} />
-      <Route path="/pots" element={<Pots />} />
-      <Route path="/recurringbills" element={<RecurringBills />} />
+      <Route path={`${baseURL}/overview`} element={<Overview />} />
+      <Route path={`${baseURL}/transactions`} element={<Transactions />} />
+      <Route path={`${baseURL}/budgets`} element={<Budgets />} />
+      <Route path={`${baseURL}/pots`} element={<Pots />} />
+      <Route path={`${baseURL}/recurringBills`} element={<RecurringBills />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );
